@@ -9,14 +9,11 @@ import java.awt.Dimension;
 
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-import javax.swing.JComboBox;
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.JRadioButton;
 import javax.swing.JButton;
 import javax.swing.JSlider;
 import javax.swing.event.ChangeListener;
 import javax.swing.event.ChangeEvent;
-import javax.swing.plaf.basic.BasicBorders.RadioButtonBorder;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -28,6 +25,10 @@ import java.awt.Toolkit;
 
 public class IzvrsiZamenuGUI extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7354369094195928149L;
 	private JPanel contentPane;
 	private JLabel lblKupovni;
 	private JLabel lblProdajniKurs;
@@ -46,7 +47,6 @@ public class IzvrsiZamenuGUI extends JFrame {
 	private JTextField textFieldValuta;
 	private JLabel lblKonacniIznos;
 	private JTextField textFieldKonacniIznos;
-
 
 	private Valuta valuta;
 
@@ -79,6 +79,7 @@ public class IzvrsiZamenuGUI extends JFrame {
 		contentPane.add(getLblKonacniIznos());
 		contentPane.add(getTextFieldKonacniIznos());
 		
+		//podesavanje
 		this.valuta = valuta;
 				
 		prikaziValutu();

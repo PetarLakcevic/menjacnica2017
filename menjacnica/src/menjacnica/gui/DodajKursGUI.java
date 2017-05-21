@@ -1,6 +1,5 @@
 package menjacnica.gui;
 
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -23,11 +22,11 @@ import java.awt.Toolkit;
 
 public class DodajKursGUI extends JFrame {
 
-	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -5060345208188840087L;
+	
 	private JPanel contentPane;
 	private JLabel lblSifra;
 	private JLabel lblNaziv;
@@ -43,7 +42,6 @@ public class DodajKursGUI extends JFrame {
 	private JButton btnDodaj;
 	private JButton btnOdus;
 
-	
 	private JSpinner spinnerSifra;
 
 	/**
@@ -73,7 +71,6 @@ public class DodajKursGUI extends JFrame {
 		contentPane.add(getTextFieldSkraceniNaziv());
 		contentPane.add(getBtnDodaj());
 		contentPane.add(getBtnOdus());
-		
 				
 	}
 
